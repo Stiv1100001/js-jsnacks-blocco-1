@@ -5,9 +5,9 @@ document.getElementById('submit').addEventListener('click', () => {
   const parola2 = document.getElementById('input-due').value.trim();
 
   if (parola1.length > parola2.length) {
-    result.innerHTML = `È più lunga la parola ${parola1}`;
+    result.innerHTML = `${parola1} ${parola2}`;
   } else if (parola1.length < parola2.length) {
-    result.innerHTML = `È più lunga la parola ${parola2}`;
+    result.innerHTML = `${parola2} ${parola1}`;
   } else {
     result.innerHTML = `Le parole sono lunghe uguali`;
   }
