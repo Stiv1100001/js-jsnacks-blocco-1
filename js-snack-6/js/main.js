@@ -1,11 +1,10 @@
 const result = document.getElementById('result');
 
-const number = prompt('Inserisci un numero di 6 cifre');
-
+const numbers = prompt('Inserisci un numero di 6 cifre').split('');
 let sum = 0;
 
-for (let i = 0; i < number.length; i++) {
-  sum += parseInt(number.charAt(i));
+for (let number of numbers) {
+  sum += parseInt(number);
 }
 
 result.innerHTML = `La somma è: ${sum}`;
